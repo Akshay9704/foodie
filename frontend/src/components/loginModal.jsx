@@ -3,6 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import RecipeContext from "../context/RecipeContext";
+import { baseUrl } from '../urls';
 
 const LoginModal = ({
   show,
@@ -24,7 +25,7 @@ const LoginModal = ({
 
   const login = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:8000/api/v1/users/login", {
+    const response = await fetch(`${baseUrl}/api/v1/users/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

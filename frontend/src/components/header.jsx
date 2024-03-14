@@ -1,7 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";
-import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = ({ setLoginModalShow }) => {
   const navigate = useNavigate();

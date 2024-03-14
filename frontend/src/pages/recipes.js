@@ -5,6 +5,7 @@ import Header from '../components/header';
 import Card from '../components/cards';
 import NewRecipeModal from '../components/newRecipeModal';
 import axios from 'axios';
+import { baseUrl } from '../urls';
 
 const Recipes = () => {
     const navigate = useNavigate();
@@ -27,7 +28,7 @@ const Recipes = () => {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:8000/api/v1/recipes/getRecipe")
+        axios.get(`${baseUrl}/api/v1/recipes/getRecipe`)
             .then((response) => {
                 setRecipes(response.data.data);
             })

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Modal from "react-bootstrap/Modal";
 import RecipeContext from "../context/RecipeContext";
 import axios from "axios";
+import { baseUrl } from '../urls';
 
 const EditModal = ({ show, onHide, recipe }) => {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ const EditModal = ({ show, onHide, recipe }) => {
 
   const editRecipe = async () => {
     const response = await axios.put(
-      `http://localhost:8000/api/v1/recipes/updateRecipe/${recipe._id}`,
+      `${baseUrl}/api/v1/recipes/updateRecipe/${recipe._id}`,
       {
         title: edit.etitle,
         ingredients: edit.eingredients,

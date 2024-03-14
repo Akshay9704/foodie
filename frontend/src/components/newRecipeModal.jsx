@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from "react-bootstrap/Modal";
+import { baseUrl } from '../urls';
 
 const NewRecipeModal = ({ show, onHide }) => {
   const [newRecipe, setNewRecipe] = React.useState({
@@ -26,7 +27,7 @@ const NewRecipeModal = ({ show, onHide }) => {
 
     try {
       const response = await fetch(
-        "http://localhost:8000/api/v1/recipes/createRecipe",
+        `${baseUrl}/api/v1/recipes/createRecipe`,
         {
           method: "POST",
           headers: {
@@ -70,10 +71,6 @@ const NewRecipeModal = ({ show, onHide }) => {
       </Modal.Header>
       <Modal.Body>
         <section className="flex flex-col gap-2 items-center justify-center">
-          {/* <form action="/upload" method="POST" enctype="multipart/form-data">
-            <input type="file" name="recipeImage" />
-            <button className="bg-light-theme py-2 px-3 rounded-xl" type="submit">Upload</button>
-          </form> */}
           <div className="flex items-center gap-2 mt-2">
             <label htmlFor="recipeName">Recipe Name</label>
             <input

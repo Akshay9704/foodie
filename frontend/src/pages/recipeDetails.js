@@ -4,6 +4,7 @@ import React, { useState, useContext } from 'react'
 import { useLocation } from 'react-router-dom';
 import EditModal from '../components/editModal';
 import Empty from "../assets/empty.jpg";
+import { baseUrl } from '../urls';
 
 const RecipeDetails = () => {
     const navigate = useNavigate();
@@ -24,7 +25,7 @@ const RecipeDetails = () => {
 
     const deleteRecipe = async (id) => {
         const response = await fetch(
-            `http://localhost:8000/api/v1/recipes/deleteRecipe/${id}`,
+            `${baseUrl}/api/v1/recipes/deleteRecipe/${id}`,
             {
                 method: "DELETE",
                 headers: {
