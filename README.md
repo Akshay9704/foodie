@@ -1,10 +1,6 @@
 # foodie - MERN Stack Application
 
-# Project Name
-
-Welcome to the Project Name GitHub repository!
-
-This project is designed to [brief description of the project].
+Welcome to the Foodie Project GitHub repository!
 
 ## Instructions to Run the Project
 
