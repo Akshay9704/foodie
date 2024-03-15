@@ -1,2 +1,1 @@
-# foodie
-# foodie
+# foodie - MERN Stack Application
