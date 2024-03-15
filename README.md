@@ -9,7 +9,7 @@ Follow these steps to run the project locally on your machine:
 1. **Clone the Project**: First, clone this repository to your local machine using the following command:
    
    ```bash
-   git clone https://github.com/your-username/project-name.git
+   git clone https://github.com/Akshay9704/foodie
    ```
 
 2. **Change Base URL**: Navigate to the `urls.js` file in the project and change the base URL to `http://localhost:8000`.
@@ -35,7 +35,7 @@ Follow these steps to run the project locally on your machine:
 5. **Backend Setup**: Navigate to the `backend` directory:
    
    ```bash
-   cd ../backend
+   cd backend
    ```
    
    Then, install the necessary dependencies:
