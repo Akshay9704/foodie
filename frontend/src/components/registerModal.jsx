@@ -110,6 +110,7 @@ const RegisterModal = ({
             onChange={handleChange}
             type="password"
           />
+          <p className="text-center text-xs mt-2">There is an Inactive delay! So after clicking on register button please wait for 1 min and click on register again. </p>
           <div className="flex gap-2 my-3">
             <p>Already have an account? </p>
             <p

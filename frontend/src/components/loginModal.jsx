@@ -67,7 +67,6 @@ const LoginModal = ({
       </Modal.Header>
       <Modal.Body>
         <section className="flex flex-col gap-2 items-center">
-          <form>
             <input
               className="border rounded-xl px-3 py-3 mt-1 outline-none"
               placeholder="Enter Username"
@@ -84,6 +83,7 @@ const LoginModal = ({
               onChange={handleChange}
               type="password"
             />
+            <p className="text-center text-xs mt-2">There is an Inactive delay! So after clicking on login button please wait for 1 min and click on login again. </p>
             <div className="flex gap-2 my-3">
               <p>Don't have an account? </p>
               <p
@@ -101,8 +101,7 @@ const LoginModal = ({
               className="mt-2 w-full font-semibold rounded-2xl px-2 py-2 text-white bg-theme"
             >
               Login in
-            </button>
-          </form>
+            </button> 
         </section>
       </Modal.Body>
     </Modal>
