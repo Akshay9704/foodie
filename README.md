@@ -1,6 +1,14 @@
-# foodie - MERN Stack Application
+# foodie - Mobile Application
 
 Welcome to the Foodie Project GitHub repository!
+
+##Screenshots
+![Screenshot_2025_0207_162513](https://github.com/user-attachments/assets/dfdf83b0-8874-4bd1-a449-ce0b81e42c31)
+
+![Screenshot_2025_0207_162407](https://github.com/user-attachments/assets/52869ccb-eadb-4718-8487-68d07b20cd5c)
+
+
+
 
 ## Instructions to Run the Project
 
